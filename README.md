@@ -1,4 +1,4 @@
-# Stealing-Bases
+# Predicting Base Stealing Success in Major League Baseball using Machine Learning
 
 1. The selected topic for the project is the development of a machine learning model to predict whether an MLB runner will be able to successfully steal 2nd or 3rd base based on their running speed, the pitcher's average pitch speed, and the catcher's pop time. The reasoning for this selection may be that such a model could be useful for coaching and strategy decisions in baseball games, as well as for analyzing player performance and identifying potential areas for improvement.
 
