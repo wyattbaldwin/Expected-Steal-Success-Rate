@@ -14,7 +14,7 @@
 
 5. In the analysis phase of the project, the team would use the collected data to train and evaluate a machine learning model to predict whether an MLB runner will be able to successfully steal a base. This may involve splitting the data into training and test sets, selecting and tuning an appropriate model and algorithms, and using various evaluation metrics to assess the model's performance. The team may also explore different feature engineering techniques to identify the most important features for predicting base stealing success.
 
-6. The technologies, languages, tools, and algorithms that the team may use throughout the project may include:
+6. The technologies, languages, tools, and algorithms that the team may use throughout the project may include;
 
 Languages: Python, R
 Tools: Jupyter Notebook, R Studio
