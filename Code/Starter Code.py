@@ -1,25 +1,38 @@
 # Load necessary libraries
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score
 
 # Load data from CSV files
 pitch_time = pd.read_csv("pitch_arsenals.csv")
 pop_time = pd.read_csv("poptime.csv")
 running_splits = pd.read_csv("running_splits.csv")
 
-# Merge data into a single dataframe
-data = pd.merge(pitch_time, pop_time, on="player_id")
-data = pd.merge(data, running_splits, on="player_id")
+# Extract the features and labels
+X = data[['feature1', 'feature2', ...]]
+y = data['label']
 
-# Generate summary statistics
-print(data.describe())
+# Split the data into training and test sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
-# Visualize relationships between variables
-plt.scatter(data["pitch_time"], data["pop_time"])
-plt.xlabel("Average Pitch Time (seconds)")
-plt.ylabel("Catcher Pop Time (seconds)")
-plt.show()
+# Create a logistic regression model
+logistic_regression_model = LogisticRegression()
 
-# Check for missing values
-print(data.isnull().sum())
+# Train the model using the training data
+logistic_regression_model.fit(X_train, y_train)
+
+# Make predictions on the test data
+y_pred = logistic_regression_model.predict(X_test)
+
+# Evaluate the model's performance
+confusion_matrix = confusion_matrix(y_test, y_pred)
+accuracy = accuracy_score(y_test, y_pred)
+precision = precision_score(y_test, y_pred)
+recall = recall_score(y_test, y_pred)
+
+print('Confusion matrix:')
+print(confusion_matrix)
+print('Accuracy:', accuracy)
+print('Precision:', precision)
+print('Recall:', recall)
