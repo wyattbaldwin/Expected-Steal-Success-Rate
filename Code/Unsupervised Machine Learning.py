@@ -8,30 +8,30 @@ df1 = pd.read_csv('pitch_arsenals.csv')
 df2 = pd.read_csv('poptime.csv')
 df3 = pd.read_csv('running_splits.csv')
 
-# Extract the features and labels
-X = data[['feature1', 'feature2', ...]]
-y = data['label']
-
 # Split the data into training and test sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+train_index <- createDataPartition(data$label, p = 0.8, list = FALSE)
+train <- data[train_index,]
+test <- data[-train_index,]
 
-# Create a logistic regression model
-logistic_regression_model = LogisticRegression()
+# Extract the features and labels
+X_train <- train[,c('feature1', 'feature2', ...)]
+y_train <- train$label
+X_test <- test[,c('feature1', 'feature2', ...)]
+y_test <- test$label
 
-# Train the model using the training data
-logistic_regression_model.fit(X_train, y_train)
+# Train a random forest model
+model <- randomForest(y_train ~ ., data = train)
 
 # Make predictions on the test data
-y_pred = logistic_regression_model.predict(X_test)
+y_pred <- predict(model, newdata = test)
 
 # Evaluate the model's performance
-confusion_matrix = confusion_matrix(y_test, y_pred)
-accuracy = accuracy_score(y_test, y_pred)
-precision = precision_score(y_test, y_pred)
-recall = recall_score(y_test, y_pred)
+confusion_matrix <- table(y_pred, y_test)
+accuracy <- sum(diag(confusion_matrix)) / sum(confusion_matrix)
+precision <- confusion_matrix[1,1] / (confusion_matrix[1,1] + confusion_matrix[2,1])
+recall <- confusion_matrix[1,1] / (confusion_matrix[1,1] + confusion_matrix[1,2])
 
-print('Confusion matrix:')
 print(confusion_matrix)
-print('Accuracy:', accuracy)
-print('Precision:', precision)
-print('Recall:', recall)
+print(accuracy)
+print(precision)
+print(recall)
