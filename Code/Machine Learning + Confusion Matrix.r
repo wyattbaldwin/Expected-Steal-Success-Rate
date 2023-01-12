@@ -1,13 +1,12 @@
 # Install necessary libraries
-#install.packages("tidyverse")
-#install.packages("caret")
+install.packages("tidyverse")
+install.packages("caret")
 
 # Load necessary libraries
 library(tidyverse)
 library(caret)
 
 # Load data from .csv files
-setwd("C:\\Users\\Wyatt Baldwin\\Music\\Stealing Bases")
 pitch_arsenals <- read_csv("pitch_arsenals.csv")
 poptime <- read_csv("poptime.csv")
 running_splits <- read_csv("running_splits.csv")
