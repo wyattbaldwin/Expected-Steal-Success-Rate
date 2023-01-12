@@ -13,11 +13,13 @@ num_pages = 50
 # Name of the CSV file to save the data to
 filename = "stolen_bases.csv"
 
+fixed_columns = ['PLAYER', 'YEAR', 'TEAM', 'G', 'AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'BB', 'SO', 'SB', 'CS', 'AVG', 'OBP', 'SLG', 'OPS']
+
 with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
     csv_writer = csv.writer(csvfile)
 
     for page_num in range(1, num_pages + 1):
-        time.sleep(random.uniform(1, 37)) # sleep random time between 1 and 3 sec
+        time.sleep(random.uniform(1, 37)) # sleep random time between 1 and 37 sec
         # Construct the full URL
         url = base_url + '?page=' + str(page_num)
         response = requests.get(url)
@@ -33,10 +35,9 @@ with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
         table = soup.find('table')
         table_rows = table.find_all('tr')
         for tr in table_rows:
-            if page_num == 1:  # this will help us only to extract the header of the table in the first page
-                th = tr.find_all('th')
-                header = [i.get_text(strip=True) for i in th]
-                csv_writer.writerow(header)
+            if page_num == 1 and len(fixed_columns) > 0:  # this will help us only to extract the header of the table in the first page
+                csv_writer.writerow(fixed_columns)
+                fixed_columns = []
             td = tr.find_all('td')
-            row = [i.get_text(strip=True) for i in td]
-            csv_writer.writerow(row)
+            data = [i.get_text(strip=True) for i in td]
+            csv_writer.writerow(data)
