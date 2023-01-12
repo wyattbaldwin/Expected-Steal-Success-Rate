@@ -1,4 +1,4 @@
-last_name, first_name,pitcher,ff_avg_speed,si_avg_speed,fc_avg_speed,sl_avg_speed,ch_avg_speed,cu_avg_speed,fs_avg_speed,kn_avg_speed
+last_name, first_name,pitcher_id,4_seam_fastball,sinker,cutter,slider,changeup,curve,splitter,knuckleball
 Burnes, Corbin,669203,96.1,96.3,95,88.2,90.3,81.6,,
 Cole, Gerrit,543037,97.8,,92,88.7,89.7,83,,
 Alcantara, Sandy,645261,98,97.8,,90,91.8,86.2,,
