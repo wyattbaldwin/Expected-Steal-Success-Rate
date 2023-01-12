@@ -1,4 +1,4 @@
-﻿catcher,player_id,team_id,age,maxeff_arm_2b_3b_sba,exchange_2b_3b_sba,pop_2b_sba_count,pop_2b_sba,pop_2b_cs,pop_2b_sb,pop_3b_sba_count,pop_3b_sba,pop_3b_cs,pop_3b_sb
+﻿catcher,player_id,team_id,age,throwing_speed,catch_to_throw_time,#_of_stolen_base_attempts_at_2nd,average_time_to_throw_to_2nd,#_players_caught_stealing_2nd,#_of_stolen_base_attempts_at_3rd,average_time_to_throw_to_3rd,#_players_caught_stealing_3rd
 Matt Thaiss,,108,27,83.9,0.79,5,1.99,1.82,2.03,0,,,
 J.T. Realmuto,,143,31,87.6,0.67,44,1.82,1.83,1.82,1,1.4,,1.4
 Elias Díaz,,115,31,84.8,0.72,29,1.94,1.87,1.97,5,1.43,1.4,1.44
