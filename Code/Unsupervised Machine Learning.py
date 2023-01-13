@@ -1,3 +1,6 @@
+#This script is loading three datasets from .csv files, and then dividing them into training and test sets. It then trains a random forest model using the training data, and makes predictions on the test data.
+#The script is evaluating the performance of the model by calculating a confusion matrix, accuracy, precision and recall, and then printing the results.
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
