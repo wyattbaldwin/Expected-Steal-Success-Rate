@@ -1,3 +1,5 @@
+#This script scrapes data from mlb.com and creates or edits a .csv file
+
 import requests
 from bs4 import BeautifulSoup
 import csv
