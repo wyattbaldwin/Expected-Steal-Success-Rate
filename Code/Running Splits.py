@@ -1,3 +1,6 @@
+#The script loads a csv file "running_splits_2022.csv" into a pandas dataframe and defines a function "interpolate_time" which takes player_name and distance as inputs.
+#The function takes the inputs and calculates the estimated time it takes for the player to reach the provided distance by using interpolation. It then returns this time and the last block of code tests the function by providing a player_name and distance, and prints the estimated time.
+
 import pandas as pd
 
 # Load data from spreadsheet
