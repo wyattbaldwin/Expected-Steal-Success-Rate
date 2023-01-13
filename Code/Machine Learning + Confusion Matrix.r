@@ -1,3 +1,7 @@
+#The script is loading and merging three datasets from .csv files, pre-processing them and then training a machine learning model using a method called glm.
+#The script is using the trained model to make predictions on a test set, and then evaluating the performance of the model by calculating a confusion matrix and accuracy score.
+
+
 # Install necessary libraries
 #install.packages("tidyverse")
 #install.packages("caret")
