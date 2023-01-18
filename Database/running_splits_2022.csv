@@ -1,4 +1,4 @@
-﻿last_name, first_name,player_id,team_name_abbrev,team_id,player_position_name,player_age,bat_side,time_at_00ft,time_at_05ft,time_at_10ft,time_at_15ft,time_at_20ft,time_at_25ft,time_at_30ft,time_at_35ft,time_at_40ft,time_at_45ft,time_at_50ft,time_at_55ft,time_at_60ft,time_at_65ft,time_at_70ft,time_at_75ft,time_at_80ft,time_at_85ft,time_at_90ft
+﻿last_name, first_name,player_id,team_name_abbrev,team_id,player_position_name,player_age,bat_side,time_at_00ft,time_at_5ft,time_at_10ft,time_at_15ft,time_at_20ft,time_at_25ft,time_at_30ft,time_at_35ft,time_at_40ft,time_at_45ft,time_at_50ft,time_at_55ft,time_at_60ft,time_at_65ft,time_at_70ft,time_at_75ft,time_at_80ft,time_at_85ft,time_at_90ft
 Abrams, CJ,682928,WSH,120,SS,21,L,0.00,0.53,0.82,1.07,1.30,1.51,1.71,1.90,2.09,2.27,2.44,2.62,2.79,2.95,3.12,3.29,3.45,3.63,3.82
 Abreu, José,547989,CWS,145,1B,35,R,0.00,0.57,0.92,1.20,1.45,1.68,1.90,2.11,2.32,2.52,2.71,2.90,3.09,3.27,3.46,3.64,3.83,4.02,4.22
 Acuña Jr., Ronald,660670,ATL,144,RF,24,R,0.00,0.54,0.85,1.10,1.33,1.54,1.74,1.93,2.12,2.30,2.48,2.65,2.82,2.99,3.16,3.32,3.49,3.65,3.82
