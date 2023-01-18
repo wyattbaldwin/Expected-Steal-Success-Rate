@@ -6,8 +6,15 @@ import pandas as pd
 # Load data from spreadsheet
 data = pd.read_csv("Database/running_splits_2022.csv")
 
+# print the column names
+print(data.columns)
+
+# drop the column 'time_at_000ft'
+data.drop(columns=['time_at_00ft'], inplace=True)
+
 # Define the function to calculate the time at an unknown distance
 def interpolate_time(player_name, distance):
+
     # Filter the data for the player
     player_data = data[data["last_name"] == player_name]
     
@@ -19,11 +26,9 @@ def interpolate_time(player_name, distance):
     lower_distance = distances[idx-1]
     upper_distance = distances[idx]
 
-
-    
     # Use the corresponding known times to calculate the time at the unknown distance
-    lower_time = player_data[f"time_at_{str(lower_distance).zfill(3)}ft"].values[0]
-    upper_time = player_data[f"time_at_{str(upper_distance).zfill(3)}ft"].values[0]
+    lower_time = player_data[f"time_at_{str(int(lower_distance))}ft"].values[0]
+    upper_time = player_data[f"time_at_{str(int(upper_distance))}ft"].values[0]
     interpolated_time = lower_time + (upper_time - lower_time) * (distance - lower_distance) / (upper_distance - lower_distance)
     
     return interpolated_time
