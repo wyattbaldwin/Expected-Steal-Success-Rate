@@ -30,9 +30,9 @@ BsR is similar to the statistic "+/-" in hockey which measures the impact of a p
 BsR can be a useful tool in determining the runner's jump, but it does not take into account the situation.
 
 ## Fixed Data:
-The distance between home plate and the pitching rubber on a Major League Baseball field is 60 feet, 6 inches (18.44 meters).
-The distance between the bases on a Major League Baseball field is 90 feet (27.432 meters).
-The distance from home plate to second base in Major League Baseball is about 127 feet and 3 inches (38.71 meters).
+- The distance between home plate and the pitching rubber on a Major League Baseball field is 60 feet, 6 inches (18.44 meters).
+- The distance between the bases on a Major League Baseball field is 90 feet (27.432 meters).
+- The distance from home plate to second base in Major League Baseball is about 127 feet and 3 inches (38.71 meters).
 
 ## Data:
 BsR can be used in conjunction with other statistics such as batting average, on-base percentage, and slugging percentage to provide a more complete picture of a player's performance. Additionally, it can be used in combination with defensive metrics such as fielding percentage and range factor to evaluate a player's overall value on the field.
