@@ -2,7 +2,7 @@
 
 This project is a comprehensive course on data analytics that covers a wide range of topics and tools, including Excel, Python, SQL, and web development. The course also delves into advanced topics such as Tableau and machine learning. Through this course, I have gained a strong understanding of data visualization, data ethics, and ETL processes.
 
-The highlight of the course was the final project where I led a group of participants to create a new advanced statistic in baseball called the expected steal success rate. This new statistic utilizes data visualization and machine learning techniques.
+The highlight of the course was the final project where worked with a team to create a new advanced statistic in baseball called the expected steal success rate. This new statistic utilizes data visualization and machine learning techniques.
 
 I have honed my skills in Excel, Python, SQL and web development, and have gained a strong understanding of advanced topics such as Tableau and machine learning. I have also gained experience in data visualization, data ethics and ETL process.
 
