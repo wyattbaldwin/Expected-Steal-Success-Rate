@@ -1,42 +1,38 @@
-# Predicting Base Stealing Success in Major League Baseball using Machine Learning
+# Defining the Expected Steal Success Rate (ESSR) in Major League Baseball
+This project aims to define a new advanced baseball statistic, the Expected Steal Success Rate (ESSR), that uses data visualization and machine learning techniques. The purpose of ESSR is to provide a comprehensive measure of a player's ability to successfully steal bases in Major League Baseball.
 
-This project is a comprehensive course on data analytics that covers a wide range of topics and tools, including Excel, Python, SQL, and web development. The course also delves into advanced topics such as Tableau and machine learning. Through this course, I have gained a strong understanding of data visualization, data ethics, and ETL processes.
+## Factors affecting ESSR
+There are several factors that can influence a player's ability to steal a base, including:
 
-The highlight of the course was the final project where worked with a team to create a new advanced statistic in baseball called the expected steal success rate. This new statistic utilizes data visualization and machine learning techniques.
-
-I have honed my skills in Excel, Python, SQL and web development, and have gained a strong understanding of advanced topics such as Tableau and machine learning. I have also gained experience in data visualization, data ethics and ETL process.
-
-The final project was a great opportunity to apply my newfound knowledge and skills in the field of data analytics. I am confident that my comprehensive understanding of data analytics tools and technologies, and my ability to think creatively and work collaboratively, will make me a valuable asset to any organization.
-
-## Factors that can affect a player's ability to steal a base:
 ### Runner-
-Speed: A runner's speed plays a crucial role in his ability to steal a base. A faster runner will have an easier time stealing a base than a slower runner.
-
-Lead off distance: The distance the runner starts from his base before the pitcher throws the ball, the bigger the lead off, the better the chance to reach next base.
-
+Speed: A runner's speed plays a crucial role in their ability to steal a base. A faster runner will have an easier time stealing a base than a slower runner.
+Lead off distance: The distance the runner starts from their base before the pitcher throws the ball, the bigger the lead off, the better the chance to reach the next base.
 Jump: A runner's ability to get a quick start and "jump" off the base can also play a role in a successful steal.
 ### Pitcher-
-Delivery time: The pitcher's delivery time to home plate can affect the ability of the runner to steal a base. Faster deliveries makes it more difficult for the runner to get a good jump.
+Delivery time: The pitcher's delivery time to home plate can affect the ability of the runner to steal a base. Faster deliveries make it more difficult for the runner to get a good jump.
 ### Catcher-
 Pop time: The time it takes for the catcher to release the ball after receiving it from the pitcher can play a role in a successful steal.
-
 Arm strength: A catcher with a strong arm will make it more difficult for the runner to reach the next base.
-
-## Current Advanced Stat MLB Teams Use:
-Baserunning Runs (BsR) is a statistic that estimates the number of runs a player contributes or subtracts to his team through their baserunning skills. BsR takes into account various factors, such as stolen base attempts, taking extra bases on hits, and advancing on fly balls. A positive BsR value indicates that a player is adding value to his team through their baserunning skills, while a negative BsR value indicates that a player is subtracting value from his team through their baserunning skills.
-
-BsR is similar to the statistic "+/-" in hockey which measures the impact of a player on the number of goals scored by the team while they were on the ice. Both +/- and BsR attempt to capture the overall value of a player's skills within the context of the team and should not be the only measure of a player's performance.
-
-BsR can be a useful tool in determining the runner's jump, but it does not take into account the situation.
+Current Advanced Statistics used by MLB Teams:
+One of the advanced statistics currently used by Major League Baseball teams is Baserunning Runs (BsR), which estimates the number of runs a player contributes or subtracts to their team through their baserunning skills. BsR takes into account various factors, such as stolen base attempts, taking extra bases on hits, and advancing on fly balls. However, BsR does not take into account the situation, making it less comprehensive than ESSR.
 
 ## Fixed Data:
-- The distance between home plate and the pitching rubber on a Major League Baseball field is 60 feet, 6 inches (18.44 meters).
-- The distance between the bases on a Major League Baseball field is 90 feet (27.432 meters).
-- The distance from home plate to second base in Major League Baseball is about 127 feet and 3 inches (38.71 meters).
+The distance between home plate and the pitching rubber on a Major League Baseball field is 60 feet, 6 inches (18.44 meters).
+The distance between the bases on a Major League Baseball field is 90 feet (27.432 meters).
+The distance from home plate to second base in Major League Baseball is about 127 feet and 3 inches (38.71 meters).
+Data Information:
+ESSR can be used in conjunction with other statistics such as batting average, on-base percentage, and slugging percentage to provide a more complete picture
 
-## Data Information:
-BsR can be used in conjunction with other statistics such as batting average, on-base percentage, and slugging percentage to provide a more complete picture of a player's performance. Additionally, it can be used in combination with defensive metrics such as fielding percentage and range factor to evaluate a player's overall value on the field.
+of a player's overall performance. The data for ESSR will be collected from existing sources such as Major League Baseball's Statcast system, which tracks various aspects of each play, including the speed of the runner, the delivery time of the pitcher, the pop time of the catcher, and more.
 
-It's also worth noting that BsR is a statistic that is most commonly used in baseball, but similar metrics exist in other sports such as hockey and basketball. In hockey, the statistic "+/-" attempts to measure a player's impact on the number of goals scored by the team while they were on the ice. In basketball, the statistic plus-minus attempts to measure a player's impact on the number of points scored by the team while they were on the court.
+## Data Preparation:
+The collected data will need to be cleaned and processed before it can be used in the analysis. This will involve removing any missing or irrelevant data, and transforming the data into a format that can be easily used in machine learning algorithms.
 
-In terms of fixed data, it's important to note that the dimensions of a baseball field can vary depending on the level of play. While the dimensions of a Major League Baseball field are standardized, fields in lower levels of play may have different measurements. Additionally, while the distance between the bases and home plate is fixed, other elements of the field such as the height of the pitcher's mound, the size of the strike zone, and the type of surface the field is played on can also impact the game.
+## Data Visualization:
+Data visualization techniques will be used to explore and understand the relationship between the different factors that affect ESSR. This will help identify the most important factors and the relationships between them.
+
+## Machine Learning Techniques:
+Machine learning algorithms such as linear regression, decision trees, or random forests will be used to build a model that predicts ESSR. The model will be trained using the processed data, and its accuracy will be evaluated using cross-validation techniques.
+
+## Conclusion:
+The ESSR statistic provides a comprehensive measure of a player's ability to successfully steal bases in Major League Baseball. By combining data visualization and machine learning techniques, ESSR provides a more complete picture of a player's performance than current advanced statistics. This can help teams make more informed decisions about their roster and tactics, leading to improved performance on the field.
