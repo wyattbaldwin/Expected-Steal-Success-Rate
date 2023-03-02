@@ -1,4 +1,4 @@
-# Defining the Expected Steal Success Rate (ESSR) in Major League Baseball
+# Defining the Expected Steal Success Rate (ESSR) in Major League Baseball 
 This project aims to define a new advanced baseball statistic, the Expected Steal Success Rate (ESSR), that uses data visualization and machine learning techniques. The purpose of ESSR is to provide a comprehensive measure of a player's ability to successfully steal bases in Major League Baseball.
 
 ## Factors affecting ESSR
